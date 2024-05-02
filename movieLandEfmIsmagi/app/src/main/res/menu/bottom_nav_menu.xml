@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filmFragment"
+        android:icon="@drawable/clap"
+        android:title="Film" />
+    <item
+        android:id="@+id/cinemaFragment"
+        android:icon="@drawable/cinema"
+        android:title="Cinema" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/favorisFragment"
+        android:icon="@drawable/favori"
+        android:title="Reservation" />
+
+    <item
+        android:id="@+id/compteFragment"
+        android:icon="@drawable/utilisateur"
+        android:title="Settings" />
+
+
+</menu>

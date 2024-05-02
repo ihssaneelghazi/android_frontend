@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph" app:startDestination="@id/filmFragment">
+
+    <fragment android:id="@+id/placeholder">
+        <action android:id="@+id/action_placeholder_to_cinemaFragment" app:destination="@id/cinemaFragment"/>
+        <action android:id="@+id/action_placeholder_to_filmFragment" app:destination="@id/filmFragment"/>
+        <action android:id="@+id/action_placeholder_to_compteFragment" app:destination="@id/compteFragment"/>
+        <action android:id="@+id/action_placeholder_to_searchFragment" app:destination="@id/searchFragment"/>
+        <action android:id="@+id/action_placeholder_to_favorisFragment" app:destination="@id/favorisFragment"/>
+    </fragment>
+    <fragment android:id="@+id/filmFragment" android:name="com.ismagiefm.movielandefmismagi.UI.fragments.FilmFragment"
+              android:label="fragment_film" tools:layout="@layout/fragment_film">
+        <action android:id="@+id/action_filmFragment_to_filmFragmentDetail" app:destination="@id/filmFragmentDetail"/>
+    </fragment>
+    <fragment android:id="@+id/cinemaFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.CinemaFragment"
+              android:label="fragment_cinema" tools:layout="@layout/fragment_cinema">
+        <action android:id="@+id/action_cinemaFragment_to_cinemaVilleFragment"
+                app:destination="@id/cinemaVilleFragment"/>
+    </fragment>
+    <fragment android:id="@+id/compteFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.CompteFragment"
+              android:label="fragment_compte" tools:layout="@layout/fragment_compte">
+        <action android:id="@+id/action_compteFragment_to_compteFragmentLogin"
+                app:destination="@id/compteFragmentLogin"/>
+        <action android:id="@+id/action_compteFragment_to_compteFragmentInscription"
+                app:destination="@id/compteFragmentInscription"/>
+        <action
+            android:id="@+id/action_compteFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment android:id="@+id/favorisFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.FavorisFragment"
+              android:label="fragment_favoris" tools:layout="@layout/fragment_favoris"/>
+    <fragment android:id="@+id/searchFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.SearchFragment"
+              android:label="fragment_search" tools:layout="@layout/fragment_search"/>
+    <fragment android:id="@+id/compteFragmentInscription"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.CompteFragmentInscription"
+              android:label="fragment_compte_inscription" tools:layout="@layout/fragment_compte_inscription">
+        <action android:id="@+id/action_compteFragmentInscription_to_compteFragmentLogin"
+                app:destination="@id/compteFragmentLogin"/>
+
+        <action android:id="@+id/action_compteFragmentInscription_to_verificationFragment"
+                app:destination="@id/verificationFragment"/>
+        <action
+            android:id="@+id/action_compteFragmentInscription_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment android:id="@+id/compteFragmentLogin"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.CompteFragmentLogin"
+              android:label="fragment_compte_login" tools:layout="@layout/fragment_compte_login">
+        <action android:id="@+id/action_compteFragmentLogin_to_compteFragmentInscription"
+                app:destination="@id/compteFragmentInscription"/>
+        <action android:id="@+id/action_compteFragmentLogin_to_cinemaFragment" app:destination="@id/cinemaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/filmFragmentDetail"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.FilmFragmentDetail"
+              android:label="fragment_film_detail" tools:layout="@layout/fragment_film_detail"/>
+    <fragment android:id="@+id/cinemaVilleFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.CinemaVilleFragment"
+              android:label="fragment_cinema_ville" tools:layout="@layout/fragment_cinema_ville">
+        <action android:id="@+id/action_cinemaVilleFragment_to_salleFragment" app:destination="@id/salleFragment"/>
+    </fragment>
+    <fragment android:id="@+id/salleFragment" android:name="com.ismagiefm.movielandefmismagi.UI.fragments.SalleFragment"
+              android:label="fragment_salle" tools:layout="@layout/fragment_salle">
+        <action android:id="@+id/action_salleFragment_to_projectionFragment" app:destination="@id/projectionFragment"/>
+    </fragment>
+    <fragment android:id="@+id/projectionFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.ProjectionFragment"
+              android:label="fragment_projection" tools:layout="@layout/fragment_projection">
+        <action android:id="@+id/action_projectionFragment_to_reservationFragment"
+                app:destination="@id/reservationFragment"/>
+    </fragment>
+    <fragment android:id="@+id/reservationFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.ReservationFragment"
+              android:label="fragment_reservation" tools:layout="@layout/fragment_reservation">
+        <action android:id="@+id/action_reservationFragment_to_favorisFragment" app:destination="@id/favorisFragment"/>
+    </fragment>
+
+    <activity android:id="@+id/verifyRegisterActivity2"
+              android:name="com.ismagiefm.movielandefmismagi.UI.activities.VerifyRegisterActivity"
+              android:label="activity_verify_register" tools:layout="@layout/activity_verify_register"/>
+    <fragment android:id="@+id/verificationFragment"
+              android:name="com.ismagiefm.movielandefmismagi.UI.fragments.VerificationFragment" android:label="fragment_verification"
+              tools:layout="@layout/fragment_verification">
+        <action android:id="@+id/action_verificationFragment_to_compteFragmentLogin"
+                app:destination="@id/compteFragmentLogin"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.ismagiefm.movielandefmismagi.UI.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_filmFragment"
+            app:destination="@id/filmFragment" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- TextInputLayout pour le nom du client -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomClientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nomClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom du client"
+            android:inputType="textPersonName"
+
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout pour la date de réservation -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateReservationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date de réservation"
+            android:focusable="false"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout pour le nombre de tickets -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombreTicketsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreTickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de tickets"
+            android:inputType="number"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInputLayout pour le numéro de téléphone -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numeroTelephoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/numeroTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            android:inputType="phone"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Bouton Valider -->
+    <Button
+        android:id="@+id/btn_valider"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider" />
+
+</LinearLayout>

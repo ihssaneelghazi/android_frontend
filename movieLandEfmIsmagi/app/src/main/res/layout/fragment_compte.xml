@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="16dp"
+              android:background="@color/background_color"
+              tools:context=".UI.fragments.CompteFragment">
+
+
+    <LinearLayout
+            android:layout_width="362dp"
+            android:layout_height="217dp"
+            android:gravity="end">
+
+        <!-- Bouton des paramètres -->
+        <ImageButton
+                android:id="@+id/logo"
+                android:layout_width="361dp"
+                android:layout_height="267dp"
+                android:background="@drawable/unnamed"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Titre -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connexion requise"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"/>
+
+    <!-- Description -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créez un compte pour accéder à plus de fonctionnalités."
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"/>
+
+
+    <!-- Bouton de connexion -->
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Bouton de création de compte -->
+
+    <Button
+        android:id="@+id/signupButton"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Créer un compte"
+        android:layout_marginTop="16dp"/>
+
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings"
+
+        android:padding="8dp" />
+
+</LinearLayout>

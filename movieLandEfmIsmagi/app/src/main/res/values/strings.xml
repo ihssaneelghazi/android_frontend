@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">movieLandEfmIsmagi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_cinema">Hello blank Cinema</string>
+    <string name="hello_search">Hello blank Search</string>
+    <string name="hello_favorite">Hello blank Favorite</string>
+    <string name="hello_setting">Hello blank Setting</string>
+    <string name="netflix_logo" />
+    <string name="category_label">A l affiche</string>
+    <string name="video">Annonces</string>
+    <string name="settings">settigns</string>
+    <string name="reserve">Reserver</string>
+</resources>
