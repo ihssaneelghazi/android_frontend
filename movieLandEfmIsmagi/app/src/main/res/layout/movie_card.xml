@@ -39,7 +39,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:text="Movie Title" />
+                android:text="Titre du film" />
 
             <TextView
                 android:id="@+id/movie_card_synopsis"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/white"
-                android:text="Movie Synopsis" />
+                android:text="Synopsis du film" />
 
             <TextView
                 android:id="@+id/category"
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/white"
-                android:text="Category" />
+                android:text="Catégorie" />
 
             <TextView
                 android:id="@+id/length"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/white"
-                android:text="Duree" />
+                android:text="Durée" />
 
         </LinearLayout>
 
